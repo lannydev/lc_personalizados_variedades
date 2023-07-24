@@ -1,4 +1,30 @@
-<h1>Meus Personalizados</h1>
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Personalizados e cosméticos</mat-card-title>
+    <mat-card-subtitle>Arte e beleza</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="assets//lc_personalizados.jpg" alt="Logo da marca">
+  <mat-card-content>
+    <p>
+      Personalize sua festa, itens escolares e fique ainda mais bonita com nossos cosméticos de marcas conceituadas no Brasil.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>CURTIR</button>
+    <button mat-button>COMPARTILHAR</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+
+
+<mat-card>
+
+  <p >
+    <mat-toolbar color="primary">Meus Personalizados</mat-toolbar>
+  </p>
 
 <table mat-table [dataSource]="personalizados" class="mat-elevation-z8">
 
@@ -18,5 +44,9 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+  
+</mat-card>
+
+
   
   

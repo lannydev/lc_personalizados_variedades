@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PersonalizadosRoutingModule } from './personalizados-routing.module';
 import { PersonalizadosComponent } from './personalizados/personalizados.component';
-
-import {MatTableModule} from '@angular/material/table';
+import { AppMaterialModule } from '../shared/app-material/app-material.module';
 
 
 
@@ -15,7 +14,7 @@ import {MatTableModule} from '@angular/material/table';
   imports: [
     CommonModule,
     PersonalizadosRoutingModule,
-    MatTableModule
+    AppMaterialModule
   ]
 })
 export class PersonalizadosModule { }
