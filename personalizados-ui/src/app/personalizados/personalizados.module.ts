@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { PersonalizadosRoutingModule } from './personalizados-routing.module';
 import { PersonalizadosComponent } from './personalizados/personalizados.component';
 
+import {MatTableModule} from '@angular/material/table';
+
+
 
 @NgModule({
   declarations: [
@@ -11,7 +14,8 @@ import { PersonalizadosComponent } from './personalizados/personalizados.compone
   ],
   imports: [
     CommonModule,
-    PersonalizadosRoutingModule
+    PersonalizadosRoutingModule,
+    MatTableModule
   ]
 })
 export class PersonalizadosModule { }
