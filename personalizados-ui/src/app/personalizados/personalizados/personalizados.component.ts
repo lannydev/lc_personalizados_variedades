@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Personalizado } from '../model/personalizado';
+import { PersonalizadosService } from '../services/personalizados.service';
 
 @Component({
   selector: 'app-personalizados',
@@ -8,15 +9,16 @@ import { Personalizado } from '../model/personalizado';
 })
 export class PersonalizadosComponent implements OnInit{
 
-  personalizados: Personalizado[] = [
-    {_id: '1', nome: 'Tags Minnie', categoria: 'Personalizados Impressos'},
-    {_id: '2', nome: 'Toalhinhas bordadas com nome e desenho', categoria: 'Bordado Manual'}
-  ];
+  personalizados: Personalizado[] = [];
   displayedColumns = ['nome', 'categoria'];
   
-  constructor(){
+ // personalizadosService:PersonalizadosService
+  
+  constructor(private personalizadosService:PersonalizadosService){
 
     //this.personalizados = [];
+    //this.personalizadosService = new PersonalizadosService();
+    this.personalizados = this.personalizadosService.list();
 
   }
 
