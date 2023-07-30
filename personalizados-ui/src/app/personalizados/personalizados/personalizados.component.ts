@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Personalizado } from '../model/personalizado';
 import { PersonalizadosService } from '../services/personalizados.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-personalizados',
@@ -9,7 +10,7 @@ import { PersonalizadosService } from '../services/personalizados.service';
 })
 export class PersonalizadosComponent implements OnInit{
 
-  personalizados: Personalizado[] = [];
+  personalizados: Observable <Personalizado[]>;
   displayedColumns = ['nome', 'categoria'];
   
  // personalizadosService:PersonalizadosService
