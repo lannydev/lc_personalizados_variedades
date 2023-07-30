@@ -12,3 +12,11 @@ table {
     background-size: cover;
   }
   
+
+  .loading-spinner{
+    padding: 55px;
+    background: rgba($color: #b68315, $alpha: 1.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

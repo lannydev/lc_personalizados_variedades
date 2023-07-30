@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
 import { Personalizado } from '../model/personalizado';
-import { tap } from 'rxjs';
+import { delay, first, tap } from 'rxjs';
 
 
 @Injectable({
@@ -17,6 +17,8 @@ export class PersonalizadosService {
   list() {
     return this.httpClient.get<Personalizado[]>(this.API).
     pipe(
+      first(),
+      delay(5000),
       tap(personalizados => console.log(personalizados))
     );
   }

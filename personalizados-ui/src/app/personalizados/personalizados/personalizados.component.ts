@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class PersonalizadosComponent implements OnInit{
 
-  personalizados: Observable <Personalizado[]>;
+  personalizados$: Observable <Personalizado[]>;
   displayedColumns = ['nome', 'categoria'];
   
  // personalizadosService:PersonalizadosService
@@ -19,7 +19,7 @@ export class PersonalizadosComponent implements OnInit{
 
     //this.personalizados = [];
     //this.personalizadosService = new PersonalizadosService();
-    this.personalizados = this.personalizadosService.list();
+    this.personalizados$ = this.personalizadosService.list();
 
   }
 
