@@ -14,7 +14,7 @@ import { AppMaterialModule } from '../shared/app-material/app-material.module';
   imports: [
     CommonModule,
     PersonalizadosRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
   ]
 })
 export class PersonalizadosModule { }
