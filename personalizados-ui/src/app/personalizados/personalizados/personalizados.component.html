@@ -34,13 +34,17 @@
       <!-- Coluna Nome -->
       <ng-container matColumnDef="nome">
         <th mat-header-cell *matHeaderCellDef> Nome </th>
-        <td mat-cell *matCellDef="let personalizado"> {{personalizado.nome}} </td>
+        <td mat-cell *matCellDef="let personalizado"> {{personalizado.nome}} 
+
+        </td>
       </ng-container>
     
       <!-- Coluna Categoria -->
       <ng-container matColumnDef="categoria">
         <th mat-header-cell *matHeaderCellDef> Categoria </th>
-        <td mat-cell *matCellDef="let personalizado"> {{personalizado.categoria}} </td>
+        <td mat-cell *matCellDef="let personalizado"> {{personalizado.categoria}} 
+          <mat-icon svgIcon="thumbs-up" aria-hidden="false" aria-label="Categoria do Produto">{{personalizado.categoria | categoria}}</mat-icon>
+        </td>
       </ng-container>
     
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
