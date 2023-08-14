@@ -5,6 +5,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+<<<<<<< HEAD
+=======
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
+
+
+>>>>>>> develop
 
 
 
@@ -14,7 +22,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatTableModule,
     MatCardModule,
     MatButtonModule,
+<<<<<<< HEAD
     MatToolbarModule
+=======
+    MatToolbarModule,
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatIconModule
+>>>>>>> develop
   ],
   
 })
